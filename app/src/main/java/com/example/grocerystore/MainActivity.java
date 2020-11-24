@@ -160,7 +160,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goToCheckOutActivity(){
-        Intent intent = new Intent(this, SecondActivity.class).putExtra("passed", passOnToNextActivity);
+        Intent intent = new Intent(this, CheckoutActivity.class).putExtra("passed", passOnToNextActivity);
         startActivity(intent);
     }
 
