@@ -223,6 +223,7 @@
             android:layout_marginBottom="26dp"
             android:layout_marginLeft="16dp"
             app:srcCompat="@drawable/oil" />
+
     </LinearLayout>
     <TextView
         android:id="@+id/t7"
@@ -249,4 +250,22 @@
         android:layout_marginLeft="112dp"
         android:text="Oil"
         android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/t99"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600dp"
+        android:layout_marginLeft="150dp"
+        android:text="Oil"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600dp"
+        android:layout_marginLeft="150dp"
+        android:text="CheckOut" />
+
 </RelativeLayout>

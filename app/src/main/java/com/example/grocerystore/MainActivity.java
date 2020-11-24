@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -13,6 +14,8 @@ public class MainActivity extends AppCompatActivity {
     ImageView strawberryButton, mangoButton, broccoliButton, searchButton;
     ImageView wheat, rice, milk, eggs, oil, sugar;
     String passOnToNextActivity="";
+    Button checkoutbutton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         eggs = findViewById(R.id.eggs);
         oil = findViewById(R.id.imageView12);
         sugar = findViewById(R.id.sugar);
+        checkoutbutton =  (Button) findViewById(R.id.button2);
 
         searchButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,6 +76,15 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        checkoutbutton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Do something in response to button click
+                //passOnToNextActivity="Strawberry";
+                goToCheckOutActivity();
+            }
+        });
+
 
         strawberryButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -137,9 +150,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+
     }
 
     public void goToSecondActivity() {
+        Intent intent = new Intent(this, SecondActivity.class).putExtra("passed", passOnToNextActivity);
+        startActivity(intent);
+    }
+
+    public void goToCheckOutActivity(){
         Intent intent = new Intent(this, SecondActivity.class).putExtra("passed", passOnToNextActivity);
         startActivity(intent);
     }
