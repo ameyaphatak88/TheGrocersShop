@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/dailygro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="DailyGroceries"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="32sp" />
+
+        <ImageView
+            android:id="@+id/settings"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="12dp"
+            app:srcCompat="@drawable/settings" />
+
+        <ImageView
+            android:id="@+id/cart"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="8dp"
+            app:srcCompat="@drawable/cart" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/shop_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="60dp"
+        android:text="Shop Items through the app at best prices"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="66dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="false"
+        android:layout_below="@id/shop_text"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:srcCompat="@drawable/search" />
+
+    <EditText
+        android:id="@+id/search_text"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_toRightOf="@id/search"
+        android:layout_below="@id/shop_text"
+        android:layout_marginTop="8dp"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/below_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="false"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimary"
+        android:text="Top Discounted Items" />
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/below_search"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/straw"
+            android:layout_width="114dp"
+            android:layout_height="109dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="8dp"
+            app:srcCompat="@drawable/strawberry" />
+
+        <ImageView
+            android:id="@+id/man"
+            android:layout_width="114dp"
+            android:layout_height="109dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            app:srcCompat="@drawable/mango" />
+
+        <ImageView
+            android:id="@+id/bro"
+            android:layout_width="114dp"
+            android:layout_height="109dp"
+            android:layout_below="@+id/below_search"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            app:srcCompat="@drawable/bro" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l2"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/t1"
+        android:textColor="@color/colorPrimary"
+        android:text="Top Grocerry Items"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t1"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="100dp"
+        android:text="Wheat"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="88dp"
+        android:layout_marginTop="100dp"
+        android:layout_toRightOf="@+id/t2"
+        android:layout_below="@+id/t1"
+        android:text="Rice"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/t4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="100dp"
+        android:layout_toRightOf="@+id/t3"
+        android:layout_below="@+id/t1"
+        android:text="Milk"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/t1"
+        android:layout_marginTop="8dp"
+        android:id="@+id/l3">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="118dp"
+            android:layout_height="85dp"
+            android:layout_alignParentBottom="true"
+            app:srcCompat="@drawable/wheat" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="110dp"
+            android:layout_height="95dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="16dp"
+            app:srcCompat="@drawable/r" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="126dp"
+            android:layout_height="93dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="134dp"
+            app:srcCompat="@drawable/milk" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/l3"
+        android:layout_marginTop="4dp">
+
+        <ImageView
+            android:id="@+id/sugar"
+            android:layout_width="120dp"
+            android:layout_height="85dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="26dp"
+            app:srcCompat="@drawable/sugar" />
+
+        <ImageView
+            android:id="@+id/eggs"
+            android:layout_width="120dp"
+            android:layout_height="85dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="26dp"
+            android:layout_marginLeft="16dp"
+            app:srcCompat="@drawable/eggs" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="120dp"
+            android:layout_height="85dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="26dp"
+            android:layout_marginLeft="16dp"
+            app:srcCompat="@drawable/oil" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/t7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sugar"
+        android:layout_marginTop="545dp"
+        android:layout_marginLeft="32dp"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/t5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="545dp"
+        android:layout_marginLeft="172dp"
+        android:text="Eggs"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/t6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="545dp"
+        android:layout_toRightOf="@+id/t5"
+        android:layout_marginLeft="112dp"
+        android:text="Oil"
+        android:textSize="16sp" />
+</RelativeLayout>
