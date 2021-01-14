@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".customerItemDetails">
+
+
+    <TextView
+        android:id="@+id/OrdermessageList"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="Order Details"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="40dp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:clickable="true"
+        android:id="@+id/listViewOrder"
+        android:padding="10dp"
+        android:dividerHeight="10dp"
+        android:divider="@color/white"
+        android:layout_below="@+id/OrdermessageList"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/listViewOrder"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/deliver"
+        android:id="@+id/deliverButton"
+        />
+
+</RelativeLayout>

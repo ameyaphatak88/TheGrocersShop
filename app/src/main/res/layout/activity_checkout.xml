@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".CheckoutActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Please fill in the following details before checking out!"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="28dp"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:hint="Full Name"
+        android:gravity="center"
+        android:clickable="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:background="@drawable/gradient"
+        android:backgroundTint="@color/bg"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:id="@+id/editTextTextPersonName"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:hint="Phone Number"
+        android:gravity="center"
+        android:clickable="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:inputType="phone"
+        android:background="@drawable/gradient"
+        android:backgroundTint="@color/bg"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:id="@+id/editTextPhone2"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:hint="E-Mail Address"
+        android:clickable="true"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/gradient"
+        android:backgroundTint="@color/bg"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:id="@+id/editTextTextEmailAddress"
+        />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Mode of Payment"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-condensed-medium"
+
+        />
+
+    <Spinner
+        android:layout_height="50dp"
+        android:layout_width="300dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:id="@+id/dropdownPayment"
+        android:clickable="true"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="30dp"
+        android:hint="Postal Address"
+        android:clickable="true"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:background="@drawable/gradient"
+        android:backgroundTint="@color/bg"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:id="@+id/editTextTextPostalAddress"
+
+        />
+
+    <ImageView
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/checkoutsubmit"
+        android:textSize="18dp" />
+
+</LinearLayout>

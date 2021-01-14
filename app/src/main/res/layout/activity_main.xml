@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:textSize="35dp"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="sans-serif-condensed-medium"
+            />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:text="E-mail ID"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="80dp"
+            android:text=""
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp"
+            android:background="@drawable/gradient"
+            android:backgroundTint="@color/bg"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:id="@+id/username"
+            />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="155dp"
+            android:text="Password"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            />
+
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="200dp"
+            android:inputType="textPassword"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp"
+            android:background="@drawable/gradient"
+            android:backgroundTint="@color/bg"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:id="@+id/password"
+            />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:src="@drawable/loginbutton"
+            android:layout_below="@+id/password"
+            android:layout_marginTop="30dp"
+            android:id="@+id/login"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Not a member? "
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="20dp"
+            android:layout_marginLeft="60dp"
+            android:gravity="center"
+            android:layout_below="@+id/login"
+            android:layout_marginTop="30dp"
+            android:id="@id/signuptext"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Sign up"
+            android:textColor="@color/redbg"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_below="@+id/login"
+            android:layout_toRightOf="@+id/signuptext"
+            android:layout_marginTop="30dp"
+            android:id="@+id/signup2"
+            android:clickable="true"
+            />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/signuptext"
+            android:src="@drawable/admin"
+            android:id="@+id/adminbutton"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

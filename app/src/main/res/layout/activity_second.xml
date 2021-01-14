@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="15dp"
+    tools:context=".SecondActivity"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Product"
+        android:foregroundGravity="center"
+        android:id="@+id/productName"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="50dp" />
+
+    <ImageView
+        android:layout_margin="20dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/cart"
+        android:id="@+id/displayImage"
+        />
+
+    <TextView
+        android:layout_margin="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="17dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/productDesc"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        />
+
+    <TextView
+        android:layout_margin="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cost"
+        android:gravity="left"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Cost"
+        android:textSize="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+        <TextView
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qty :"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="30dp"
+            />
+
+        <ImageView
+            android:layout_marginLeft="17dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/plus"
+            android:id="@+id/increment"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:id="@+id/quantity"
+            android:layout_marginLeft="10dp"
+            android:textSize="30dp"
+            />
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/minus"
+            android:id="@+id/decrement"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Total Cost"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/totalCost"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/button"
+        android:id="@+id/addToCart"
+        />
+
+</LinearLayout>
